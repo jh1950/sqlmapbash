@@ -59,7 +59,7 @@ ERROR() {
 }
 
 if [ -n "`which xterm`" ]; then TERMINAL="xterm -e"
-elif [ -n "`which gnome-terminal`" ]; then TERMINAL="gnome-terminal --wait -- bash -c"
+elif [ -n "`which gnome-terminal`" ]; then TERMINAL="gnome-terminal --hide-menubar --wait -- bash -c"
 else TERMINAL="eval"
 fi
 RUN() {
